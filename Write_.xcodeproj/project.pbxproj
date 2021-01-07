@@ -13,6 +13,11 @@
 		988F7BC725A76C3300085B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 988F7BC625A76C3300085B00 /* Assets.xcassets */; };
 		988F7BCA25A76C3300085B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 988F7BC825A76C3300085B00 /* LaunchScreen.storyboard */; };
 		988F7BD625A7708700085B00 /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BD525A7708700085B00 /* MainContainer.swift */; };
+		988F7BD825A7721200085B00 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BD725A7721200085B00 /* MainTabController.swift */; };
+		988F7BDA25A7738100085B00 /* DocumentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BD925A7738100085B00 /* DocumentsController.swift */; };
+		988F7BDC25A773B000085B00 /* ReaderModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BDB25A773B000085B00 /* ReaderModeController.swift */; };
+		988F7BDE25A773D600085B00 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BDD25A773D600085B00 /* SettingsController.swift */; };
+		988F7BE125A77C0100085B00 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BE025A77C0100085B00 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		988F7BC925A76C3300085B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		988F7BCB25A76C3300085B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		988F7BD525A7708700085B00 /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
+		988F7BD725A7721200085B00 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		988F7BD925A7738100085B00 /* DocumentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsController.swift; sourceTree = "<group>"; };
+		988F7BDB25A773B000085B00 /* ReaderModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderModeController.swift; sourceTree = "<group>"; };
+		988F7BDD25A773D600085B00 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		988F7BE025A77C0100085B00 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		988F7BB925A76C3100085B00 /* Write_ */ = {
 			isa = PBXGroup;
 			children = (
+				988F7BDF25A77BEF00085B00 /* Utilitis */,
 				988F7BD125A76EF300085B00 /* CoreData */,
 				988F7BD425A76F3100085B00 /* View */,
 				988F7BD325A76F2B00085B00 /* Controller */,
@@ -87,6 +98,10 @@
 			isa = PBXGroup;
 			children = (
 				988F7BD525A7708700085B00 /* MainContainer.swift */,
+				988F7BD725A7721200085B00 /* MainTabController.swift */,
+				988F7BD925A7738100085B00 /* DocumentsController.swift */,
+				988F7BDB25A773B000085B00 /* ReaderModeController.swift */,
+				988F7BDD25A773D600085B00 /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -97,6 +112,14 @@
 				988F7BC825A76C3300085B00 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		988F7BDF25A77BEF00085B00 /* Utilitis */ = {
+			isa = PBXGroup;
+			children = (
+				988F7BE025A77C0100085B00 /* Extensions.swift */,
+			);
+			path = Utilitis;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +192,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988F7BDE25A773D600085B00 /* SettingsController.swift in Sources */,
+				988F7BE125A77C0100085B00 /* Extensions.swift in Sources */,
 				988F7BC525A76C3100085B00 /* Write_.xcdatamodeld in Sources */,
 				988F7BBB25A76C3100085B00 /* AppDelegate.swift in Sources */,
+				988F7BD825A7721200085B00 /* MainTabController.swift in Sources */,
 				988F7BD625A7708700085B00 /* MainContainer.swift in Sources */,
+				988F7BDA25A7738100085B00 /* DocumentsController.swift in Sources */,
 				988F7BBD25A76C3100085B00 /* SceneDelegate.swift in Sources */,
+				988F7BDC25A773B000085B00 /* ReaderModeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +339,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MMPG5D2MU6;
 				INFOPLIST_FILE = "$(SRCROOT)/Write_/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,6 +358,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MMPG5D2MU6;
 				INFOPLIST_FILE = "$(SRCROOT)/Write_/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

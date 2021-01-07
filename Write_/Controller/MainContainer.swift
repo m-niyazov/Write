@@ -15,11 +15,19 @@ class MainContainer: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureHomeController()
+        firstScreen()
     }
     
     // MARK: - Helpers
     func  configureHomeController() {
         view.backgroundColor = .blue
+    }
+    
+    
+    func firstScreen() {
+        let viewController = MainTabController()
+        addChild(viewController)
+        view.addSubview(viewController.view)
     }
     
 }
