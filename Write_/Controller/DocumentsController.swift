@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 class DocumentsController: UIViewController {
     // MARK: - Properties
@@ -30,9 +31,12 @@ class DocumentsController: UIViewController {
      
         let logo = UIImage(named: "main-logo")
         let imageView = UIImageView(image: logo)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 75).isActive = true
+        
+        imageView.snp.makeConstraints { (make) in
+            make.width.equalTo(75)
+            make.height.equalTo(20)
+        }
+    
         navigationItem.titleView = imageView
         
     
