@@ -22,23 +22,22 @@ class DocumentsController: UIViewController {
     }
     // MARK: - Helpers
     
-    
+  
     func configureUI(){
         view.backgroundColor = .black
         //navigationBar
-        navigationController?.navigationBar.barTintColor = .black
-        navigationController?.navigationBar.tintColor = .white
-     
-        let logo = UIImage(named: "main-logo")
-        let imageView = UIImageView(image: logo)
-        
-        imageView.snp.makeConstraints { (make) in
-            make.width.equalTo(75)
-            make.height.equalTo(20)
-        }
-    
-        navigationItem.titleView = imageView
-        
-    
+        configureNavigationBar()
     }
+    
+    func configureNavigationBar(){
+          navigationController?.navigationBar.barTintColor = .black
+          navigationController?.navigationBar.tintColor = .white
+          let logo = UIImage(named: "main-logo")
+          let imageView = UIImageView(image: logo)
+          imageView.snp.makeConstraints { (make) in
+              make.width.equalTo(75)
+              make.height.equalTo(20)
+          }
+          navigationItem.titleView = imageView
+      }
 }

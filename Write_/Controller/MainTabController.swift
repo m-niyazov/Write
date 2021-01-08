@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import SnapKit
+
 
 class MainTabController: UITabBarController  {
     // MARK: - Properties
@@ -18,14 +20,13 @@ class MainTabController: UITabBarController  {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        configureViewController()
+        configureTabControllers()
     }
     // MARK: - Helpers
     
-    func configureViewController() {
-        
+    func configureTabControllers() {
         let documentsController = DocumentsController()
-        let navDocuments = templateNavigatinController(navTitle: "Documents", iconName: "folder-icon", rootController: documentsController)
+        let navDocuments = templateNavigatinController(navTitle: "Documents", iconName: "documents-icon", rootController: documentsController)
         
         let readerModeController = ReaderModeController()
         let navReaderMode = templateNavigatinController(navTitle: "Reader Mode", iconName: "bookmark-icon", rootController: readerModeController)
@@ -51,6 +52,7 @@ class MainTabController: UITabBarController  {
         tabBar.barTintColor = UIColor.rgb(red: 20, green: 20, blue: 20)
         tabBar.unselectedItemTintColor = UIColor.rgb(red: 90, green: 90, blue: 90)
         tabBar.tintColor = .white
+        
         
     }
 }
