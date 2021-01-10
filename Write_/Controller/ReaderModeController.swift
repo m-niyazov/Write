@@ -12,19 +12,40 @@ import UIKit
 class ReaderModeController: UIViewController {
     // MARK: - Properties
     
-    // MARK: - Selectors
-    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        
     }
     // MARK: - Helpers
     
     
     func configureUI() {
-        view.backgroundColor = .black
+        configureNavigationBar()
+        addCollectionController()
+    }
+    
+    func configureNavigationBar() {
         navigationController?.navigationBar.barTintColor = .black
         navigationController?.navigationBar.tintColor = .white
+        let logo = UIImage(named: "main-logo")
+        let imageView = UIImageView(image: logo)
+        imageView.snp.makeConstraints { (make) in
+            make.width.equalTo(75)
+            make.height.equalTo(20)
+        }
+        navigationItem.titleView = imageView
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+    
+    func addCollectionController() {
+        let noteColletionController = NoteColletionViewController(viewModel: ReaderModeControllerVM())
+        addChild(noteColletionController)
+        view.addSubview(noteColletionController.view)
     }
 }
+

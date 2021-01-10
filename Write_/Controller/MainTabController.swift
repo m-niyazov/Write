@@ -19,8 +19,10 @@ class MainTabController: UITabBarController  {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         configureUI()
         configureTabControllers()
+        
     }
     // MARK: - Helpers
     
@@ -33,7 +35,7 @@ class MainTabController: UITabBarController  {
         
         let settingsController = SettingsController()
         let navSettings = templateNavigatinController(navTitle: "Settings", iconName: "settings-icon", rootController: settingsController)
-              
+        
         
         viewControllers = [navDocuments, navReaderMode, navSettings]
     }
@@ -47,12 +49,14 @@ class MainTabController: UITabBarController  {
     }
     
     func configureUI() {
-        view.backgroundColor = .yellow
+        view.backgroundColor = .black
         //tabBar
-        tabBar.barTintColor = UIColor.rgb(red: 20, green: 20, blue: 20)
+        tabBar.barTintColor = UIColor.grayDark
+        tabBar.isTranslucent = false
         tabBar.unselectedItemTintColor = UIColor.rgb(red: 90, green: 90, blue: 90)
         tabBar.tintColor = .white
         
-        
     }
+    
 }
+

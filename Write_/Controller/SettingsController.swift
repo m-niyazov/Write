@@ -23,8 +23,14 @@ class SettingsController: UIViewController {
     
     
     func configureUI() {
-        view.backgroundColor = .black
-        navigationController?.navigationBar.barTintColor = .black
-        navigationController?.navigationBar.tintColor = .white
+        title = "Settings"
+        configureNavigationBar()
+    }
+    
+    func configureNavigationBar() {
+        let navigationBar = navigationController!.navigationBar
+        navigationBar.barTintColor = .grayDark
+        navigationBar.isTranslucent = false
+        navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
 }

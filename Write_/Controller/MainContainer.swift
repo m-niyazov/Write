@@ -17,10 +17,14 @@ class MainContainer: UIViewController {
         configureHomeController()
         firstScreen()
     }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     // MARK: - Helpers
     func  configureHomeController() {
-        view.backgroundColor = .blue
+        view.backgroundColor = .black
     }
     
     
@@ -31,3 +35,4 @@ class MainContainer: UIViewController {
     }
     
 }
+

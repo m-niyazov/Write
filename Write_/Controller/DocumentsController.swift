@@ -8,36 +8,42 @@
 
 import Foundation
 import UIKit
-import SnapKit
+
 
 class DocumentsController: UIViewController {
     // MARK: - Properties
-    
-    // MARK: - Selectors
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        addCollectionController()
     }
     // MARK: - Helpers
     
-  
-    func configureUI(){
-        view.backgroundColor = .black
-        //navigationBar
+    func configureUI() {
         configureNavigationBar()
     }
     
-    func configureNavigationBar(){
-          navigationController?.navigationBar.barTintColor = .black
-          navigationController?.navigationBar.tintColor = .white
-          let logo = UIImage(named: "main-logo")
-          let imageView = UIImageView(image: logo)
-          imageView.snp.makeConstraints { (make) in
-              make.width.equalTo(75)
-              make.height.equalTo(20)
-          }
-          navigationItem.titleView = imageView
-      }
+    func configureNavigationBar() {
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.tintColor = .white
+        let logo = UIImage(named: "main-logo")
+        let imageView = UIImageView(image: logo)
+        imageView.snp.makeConstraints { (make) in
+            make.width.equalTo(75)
+            make.height.equalTo(20)
+        }
+        navigationItem.titleView = imageView
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = .black
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+    
+    func addCollectionController(){
+        let noteColletionController = NoteColletionViewController(viewModel: DocumentsControllerVM())
+        addChild(noteColletionController)
+        view.addSubview(noteColletionController.view)
+    }
 }

@@ -13,11 +13,11 @@ import UIKit
 // MARK: - UIColor
 extension UIColor {
     static func rgb(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
-        return UIColor(red: red/255, green: green/255, blue: blue/255, alpha: 1)
+        return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1)
     }
-    static let mainBlue = UIColor.rgb(red: 100, green: 190, blue: 245)
+    static let grayDark = UIColor.rgb(red: 20, green: 20, blue: 20)
     
-    static let mainPink = UIColor.rgb(red: 248, green: 159, blue: 174)
+    static let grayLight = UIColor.rgb(red: 38, green: 38, blue: 38)
     
     static let lightBlue = UIColor.rgb(red: 217, green: 245, blue: 245)
 }
