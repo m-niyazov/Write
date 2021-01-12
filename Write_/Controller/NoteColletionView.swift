@@ -34,7 +34,7 @@ class NoteColletionViewController: UICollectionViewController {
 
 }
 
-// MARK: UICollectionViewDataSource
+// MARK: UICollectionViewDelegateFlowLayout
 extension NoteColletionViewController: UICollectionViewDelegateFlowLayout {
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfNotes
@@ -53,19 +53,25 @@ extension NoteColletionViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        15
+        UIEdgeInsets.mainInsets.left
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemsPerRow: CGFloat = 2
-        let paddingWidth = 15 * (itemsPerRow + 1)
+        let paddingWidth = UIEdgeInsets.mainInsets.left * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingWidth
         let widthPerItem = availableWidth / itemsPerRow
         return CGSize(width: widthPerItem, height: 195)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 15, bottom: 20, right: 15 )
+        return UIEdgeInsets.mainInsets
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let newNoteVC = NewNoteController()
+
+        navigationController?.pushViewController(newNoteVC, animated: true)
     }
     
 }

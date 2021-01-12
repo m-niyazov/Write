@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981CE3A425ADAE5500F4B56A /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981CE3A325ADAE5500F4B56A /* TextEditorView.swift */; };
 		982871E925AA83B0009A2957 /* DefaultNotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 982871E825AA83B0009A2957 /* DefaultNotes.plist */; };
 		982871EB25AA852F009A2957 /* NoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982871EA25AA852F009A2957 /* NoteCellViewModel.swift */; };
 		982871EE25AA8721009A2957 /* ReaderModeControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982871ED25AA8721009A2957 /* ReaderModeControllerVM.swift */; };
@@ -14,6 +15,7 @@
 		982871F425AAA0A4009A2957 /* NoteColletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982871F325AAA0A4009A2957 /* NoteColletionView.swift */; };
 		982871F725AAA147009A2957 /* NoteCollectionVMType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982871F625AAA147009A2957 /* NoteCollectionVMType.swift */; };
 		982871F925AAA22A009A2957 /* DocumentsControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982871F825AAA22A009A2957 /* DocumentsControllerVM.swift */; };
+		982871FB25AB1C46009A2957 /* NewNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982871FA25AB1C46009A2957 /* NewNoteController.swift */; };
 		988F7BBB25A76C3100085B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BBA25A76C3100085B00 /* AppDelegate.swift */; };
 		988F7BBD25A76C3100085B00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BBC25A76C3100085B00 /* SceneDelegate.swift */; };
 		988F7BC525A76C3100085B00 /* Write_.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BC325A76C3100085B00 /* Write_.xcdatamodeld */; };
@@ -25,6 +27,7 @@
 		988F7BDC25A773B000085B00 /* ReaderModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BDB25A773B000085B00 /* ReaderModeController.swift */; };
 		988F7BDE25A773D600085B00 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BDD25A773D600085B00 /* SettingsController.swift */; };
 		988F7BE125A77C0100085B00 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988F7BE025A77C0100085B00 /* Extensions.swift */; };
+		98BBD0AE25AC173000E8C55D /* UtilitiesUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BBD0AD25AC173000E8C55D /* UtilitiesUI.swift */; };
 		98EF0F1925A90D51000D3DF4 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF0F1825A90D51000D3DF4 /* NoteCell.swift */; };
 		98EF0F1C25A91E9B000D3DF4 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EF0F1B25A91E9A000D3DF4 /* Note.swift */; };
 		B60AB3A1B393E94EB024FB3B /* Pods_Write_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 496966C03CEADA0BA4F1A329 /* Pods_Write_.framework */; };
@@ -32,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		496966C03CEADA0BA4F1A329 /* Pods_Write_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Write_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		981CE3A325ADAE5500F4B56A /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		982871E825AA83B0009A2957 /* DefaultNotes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DefaultNotes.plist; sourceTree = "<group>"; };
 		982871EA25AA852F009A2957 /* NoteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellViewModel.swift; sourceTree = "<group>"; };
 		982871ED25AA8721009A2957 /* ReaderModeControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderModeControllerVM.swift; sourceTree = "<group>"; };
@@ -39,6 +43,7 @@
 		982871F325AAA0A4009A2957 /* NoteColletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteColletionView.swift; sourceTree = "<group>"; };
 		982871F625AAA147009A2957 /* NoteCollectionVMType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCollectionVMType.swift; sourceTree = "<group>"; };
 		982871F825AAA22A009A2957 /* DocumentsControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsControllerVM.swift; sourceTree = "<group>"; };
+		982871FA25AB1C46009A2957 /* NewNoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteController.swift; sourceTree = "<group>"; };
 		988F7BB725A76C3100085B00 /* Write_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Write_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		988F7BBA25A76C3100085B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		988F7BBC25A76C3100085B00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +57,7 @@
 		988F7BDB25A773B000085B00 /* ReaderModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderModeController.swift; sourceTree = "<group>"; };
 		988F7BDD25A773D600085B00 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		988F7BE025A77C0100085B00 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		98BBD0AD25AC173000E8C55D /* UtilitiesUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilitiesUI.swift; sourceTree = "<group>"; };
 		98EF0F1825A90D51000D3DF4 /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		98EF0F1B25A91E9A000D3DF4 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		99085A008F5C8D6DE642AED6 /* Pods-Write_.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Write_.debug.xcconfig"; path = "Target Support Files/Pods-Write_/Pods-Write_.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,7 +124,7 @@
 		988F7BB925A76C3100085B00 /* Write_ */ = {
 			isa = PBXGroup;
 			children = (
-				988F7BDF25A77BEF00085B00 /* Utilitis */,
+				988F7BDF25A77BEF00085B00 /* Utilities */,
 				988F7BD125A76EF300085B00 /* CoreData */,
 				98EF0F1A25A91E6B000D3DF4 /* Model */,
 				982871EC25AA8533009A2957 /* ViewModel */,
@@ -157,6 +163,7 @@
 				988F7BDB25A773B000085B00 /* ReaderModeController.swift */,
 				988F7BDD25A773D600085B00 /* SettingsController.swift */,
 				982871F325AAA0A4009A2957 /* NoteColletionView.swift */,
+				982871FA25AB1C46009A2957 /* NewNoteController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -167,16 +174,18 @@
 				988F7BC825A76C3300085B00 /* LaunchScreen.storyboard */,
 				98EF0F1825A90D51000D3DF4 /* NoteCell.swift */,
 				982871F125AA9547009A2957 /* NoteCellAdd.swift */,
+				981CE3A325ADAE5500F4B56A /* TextEditorView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		988F7BDF25A77BEF00085B00 /* Utilitis */ = {
+		988F7BDF25A77BEF00085B00 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				988F7BE025A77C0100085B00 /* Extensions.swift */,
+				98BBD0AD25AC173000E8C55D /* UtilitiesUI.swift */,
 			);
-			path = Utilitis;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		98EF0F1A25A91E6B000D3DF4 /* Model */ = {
@@ -318,7 +327,9 @@
 				988F7BC525A76C3100085B00 /* Write_.xcdatamodeld in Sources */,
 				988F7BBB25A76C3100085B00 /* AppDelegate.swift in Sources */,
 				98EF0F1C25A91E9B000D3DF4 /* Note.swift in Sources */,
+				982871FB25AB1C46009A2957 /* NewNoteController.swift in Sources */,
 				982871F925AAA22A009A2957 /* DocumentsControllerVM.swift in Sources */,
+				98BBD0AE25AC173000E8C55D /* UtilitiesUI.swift in Sources */,
 				98EF0F1925A90D51000D3DF4 /* NoteCell.swift in Sources */,
 				988F7BD825A7721200085B00 /* MainTabController.swift in Sources */,
 				982871F225AA9547009A2957 /* NoteCellAdd.swift in Sources */,
@@ -328,6 +339,7 @@
 				982871F725AAA147009A2957 /* NoteCollectionVMType.swift in Sources */,
 				982871EB25AA852F009A2957 /* NoteCellViewModel.swift in Sources */,
 				988F7BDC25A773B000085B00 /* ReaderModeController.swift in Sources */,
+				981CE3A425ADAE5500F4B56A /* TextEditorView.swift in Sources */,
 				982871EE25AA8721009A2957 /* ReaderModeControllerVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

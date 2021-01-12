@@ -14,12 +14,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        #if compiler(>=5.1)
-        if #available(iOS 13.0, *) {
-            // Always adopt a light interface style.
-            window?.overrideUserInterfaceStyle = .light
-        }
-        #endif
+//        #if compiler(>=5.1)
+//        if #available(iOS 13.0, *) {
+//            // Always adopt a light interface style.
+//            window?.overrideUserInterfaceStyle = .
+//        }
+//        #endif
+        
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)

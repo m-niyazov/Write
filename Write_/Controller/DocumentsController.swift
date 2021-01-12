@@ -25,20 +25,12 @@ class DocumentsController: UIViewController {
         configureNavigationBar()
     }
     
-    func configureNavigationBar() {
-        navigationController?.navigationBar.barTintColor = .black
-        navigationController?.navigationBar.tintColor = .white
-        let logo = UIImage(named: "main-logo")
-        let imageView = UIImageView(image: logo)
-        imageView.snp.makeConstraints { (make) in
-            make.width.equalTo(75)
-            make.height.equalTo(20)
-        }
-        navigationItem.titleView = imageView
-        navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = .black
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.shadowImage = UIImage()
+     func configureNavigationBar() {
+        UtilitiesUI.instance.basicNavigationBarSettings(navigationController!, navigationItem)
+        let backItem = UIBarButtonItem()
+        backItem.title = "Back"
+        backItem.tintColor = UIColor.white
+        navigationItem.backBarButtonItem = backItem
     }
     
     func addCollectionController(){
