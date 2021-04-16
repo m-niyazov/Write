@@ -74,10 +74,10 @@ class RegistrationController: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textColor = .systemRed
+        label.textColor = .lightGray
         label.isHidden = true
         label.sizeToFit()
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
     
@@ -124,6 +124,7 @@ class RegistrationController: UIViewController {
             guard error == nil else { return self.changeErrorLabel(isHidden: false, error) }
             //Success register user
             print("DEBUG: \(user.name) create! ")
+            self.navigationController?.pushViewController(MainTabController(), animated: true)
         }
     }
     

@@ -62,7 +62,6 @@ class AuthService {
     func resetPassword(withEmail email: String, complition: @escaping(_ error: String?) -> Void) {
       
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
-              print("DEBUG: \(error) ")
             guard error == nil  else { return complition(error!.localizedDescription)  }
             complition(nil)
         }

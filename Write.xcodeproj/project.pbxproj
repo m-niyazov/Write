@@ -24,6 +24,7 @@
 		984BA33E26068FE6002BE91D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984BA33D26068FE6002BE91D /* LoginController.swift */; };
 		984BA3402606902B002BE91D /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984BA33F2606902B002BE91D /* RegistrationController.swift */; };
 		98628EDE26288A5D00977AD1 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98628EDD26288A5D00977AD1 /* SettingViewModel.swift */; };
+		986E3F232629C17B00466253 /* RecoveryPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986E3F222629C17B00466253 /* RecoveryPasswordController.swift */; };
 		9878144F262050240023DE5B /* DocumentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878144E262050240023DE5B /* DocumentVM.swift */; };
 		988EE12A261DB7C200F481C3 /* DocumentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EE129261DB7C200F481C3 /* DocumentController.swift */; };
 		988EE132261DBA3C00F481C3 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988EE131261DBA3C00F481C3 /* TextView.swift */; };
@@ -58,6 +59,7 @@
 		984BA33D26068FE6002BE91D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		984BA33F2606902B002BE91D /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		98628EDD26288A5D00977AD1 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		986E3F222629C17B00466253 /* RecoveryPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPasswordController.swift; sourceTree = "<group>"; };
 		9878144E262050240023DE5B /* DocumentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentVM.swift; sourceTree = "<group>"; };
 		988EE129261DB7C200F481C3 /* DocumentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentController.swift; sourceTree = "<group>"; };
 		988EE131261DBA3C00F481C3 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				984BA33D26068FE6002BE91D /* LoginController.swift */,
 				984BA33F2606902B002BE91D /* RegistrationController.swift */,
+				986E3F222629C17B00466253 /* RecoveryPasswordController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				988EE137261DC09A00F481C3 /* KeyboardAccessoryView.swift in Sources */,
 				984BA33A260683DF002BE91D /* UtilitiesUI.swift in Sources */,
 				988EE132261DBA3C00F481C3 /* TextView.swift in Sources */,
+				986E3F232629C17B00466253 /* RecoveryPasswordController.swift in Sources */,
 				984BA3402606902B002BE91D /* RegistrationController.swift in Sources */,
 				984BA33026067412002BE91D /* DocumentsController.swift in Sources */,
 				988EE13D261E45CD00F481C3 /* CloseKeyboardButton.swift in Sources */,

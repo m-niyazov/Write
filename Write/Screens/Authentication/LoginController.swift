@@ -53,10 +53,10 @@ class LoginController: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
-        label.textColor = .systemRed
+        label.textColor = .lightGray
         label.isHidden = true
         label.sizeToFit()
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
     
@@ -106,7 +106,10 @@ class LoginController: UIViewController {
     }
     
     @objc func handleForgotPasswordButton () {
-     //TODO: - wakafaak
+        let recoveryPasswordScreen = RecoveryPasswordController()
+        let navController = UINavigationController(rootViewController: recoveryPasswordScreen)
+        navController.modalPresentationStyle = .formSheet
+        present(navController, animated: true, completion: nil)
     }
     
     @objc func handleLogInButton() {

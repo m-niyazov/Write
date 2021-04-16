@@ -18,9 +18,9 @@ class DocumentService {
         
         dataBase.collection("documents").document(documentId).delete() { err in
             if let err = err {
-                print("Error removing document: \(err)")
+                print("DEBUG: Error removing document: \(err)")
             } else {
-                print("Document successfully removed!")
+                completion()
             }
         }
 
