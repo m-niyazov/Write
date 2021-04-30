@@ -14,14 +14,10 @@ extension UIColor {
         return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: 1)
     }
     
-    
-    static let textGreen = UIColor.rgb(red: 0, green: 221, blue: 82)
-    static let gray = UIColor.rgb(red: 90, green: 90, blue: 90)
-    static let tabBar = UIColor.rgb(red: 20, green: 20, blue: 20)
+    static let bgGray = UIColor.rgb(red: 20, green: 20, blue: 20)
     static let milk = UIColor.rgb(red: 244, green: 244, blue: 244)
-    
-    
 }
+
 //MARK: - UITextField
 extension UITextField {
     func addBottomBorder(){
@@ -32,8 +28,6 @@ extension UITextField {
         layer.addSublayer(bottomLine)
     }
 }
-
-
 
 //MARK: - UIButton
 extension UIButton {
